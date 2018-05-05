@@ -1,6 +1,6 @@
 {
   "name": "@gemcook/utils",
-  "version": "1.0.1",
+  "version": "v1.1.2",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "repository": "https://github.com/gemcook/utils.git",
@@ -49,5 +49,7 @@
     "build:es": "babel src --out-dir lib",
     "prepublish": "make prepublish"
   },
-  "dependencies": {}
+  "dependencies": {
+    "js-base64": "^2.4.3"
+  }
 }
