@@ -1,0 +1,53 @@
+{
+  "name": "@gemcook/utils",
+  "version": "1.0.1",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "repository": "https://github.com/gemcook/utils.git",
+  "author": "shsssskn <shsssskn@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.46",
+    "@babel/core": "7.0.0-beta.46",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.46",
+    "@babel/plugin-proposal-export-default-from": "7.0.0-beta.46",
+    "@babel/plugin-proposal-export-namespace-from": "7.0.0-beta.46",
+    "@babel/plugin-proposal-optional-chaining": "7.0.0-beta.46",
+    "@babel/plugin-syntax-class-properties": "7.0.0-beta.46",
+    "@babel/plugin-syntax-export-default-from": "7.0.0-beta.46",
+    "@babel/plugin-syntax-export-namespace-from": "7.0.0-beta.46",
+    "@babel/plugin-syntax-optional-chaining": "7.0.0-beta.46",
+    "@babel/preset-env": "7.0.0-beta.46",
+    "@babel/preset-flow": "7.0.0-beta.46",
+    "@babel/preset-react": "7.0.0-beta.46",
+    "@babel/preset-stage-3": "7.0.0-beta.46",
+    "@babel/runtime": "7.0.0-beta.46",
+    "babel-eslint": "8.2.3",
+    "babel-jest": "23.0.0-alpha.4",
+    "eslint": "5.0.0-alpha.2",
+    "eslint-config-fbjs": "2.0.1",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-babel": "5.1.0",
+    "eslint-plugin-flowtype": "2.46.3",
+    "eslint-plugin-jest": "21.15.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-no-for-of-loops": "1.0.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-react": "7.7.0",
+    "eslint-plugin-relay": "0.0.21",
+    "flow-bin": "0.71.0",
+    "prettier": "1.12.1",
+    "prettier-eslint": "8.8.1"
+  },
+  "scripts": {
+    "build:flow-gen": "flow gen-flow-files ./src/index.js --out-dir ./lib/",
+    "build:es": "babel src --out-dir lib",
+    "prepublish": "make prepublish"
+  },
+  "dependencies": {}
+}
