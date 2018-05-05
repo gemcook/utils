@@ -22,4 +22,4 @@ yarn add @gemcook/utils
 
 ## License
 
-@gemcook/validations is released under the MIT license.
+@gemcook/utils is released under the MIT license.
