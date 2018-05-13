@@ -12,7 +12,7 @@ prepublish:
 
 	$(MAKE) build-es
 
-#	cp ./flow-typed/index.js.flow ./lib/index.js.flow
+	cp ./flow-typed/index.js.flow ./lib/index.js.flow
 
 build:
 	yarn run build-storybook

@@ -47,7 +47,7 @@
   "scripts": {
     "build:flow-gen": "flow gen-flow-files ./src/index.js --out-dir ./lib/",
     "build:es": "babel src --out-dir lib",
-    "prepublish": "make prepublish"
+    "prepublishOnly": "make prepublish"
   },
   "dependencies": {
     "js-base64": "^2.4.3"
