@@ -15,9 +15,15 @@ export function getCurrentTimestamp() {
 
 export function getDatetime(
   timestamp: number,
+  second: boolean = true,
   format?: string = 'YYYY-MM-DD HH:mm:ss',
 ) {
-  const datetime = moment(timestamp).format(format);
+  let datetime;
+  if (second) {
+    datetime = moment.unix(timestamp).format(format);
+  } else {
+    datetime = moment(timestamp).format(format);
+  }
   return datetime;
 }
 
