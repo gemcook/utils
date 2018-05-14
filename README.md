@@ -20,6 +20,12 @@ yarn add @gemcook/utils
 
 ## Documentaion
 
+### API
+
+#### shapeQueryParameter
+
+#### checkCurrentPath
+
 ## License
 
 @gemcook/utils is released under the MIT license.

@@ -1,7 +1,5 @@
-/* @flow strict-local */
-import {Base64} from 'js-base64';
-
-function shapeUrlParameter() {
+/* @flow */
+export function getUrlParameter() {
   const url = window.location.search;
   let result = {};
   let max = 0;
@@ -18,4 +16,12 @@ function shapeUrlParameter() {
   return result;
 }
 
-export default shapeUrlParameter;
+export function matchCurrentPath(path: string) {
+  const target = new RegExp(path);
+  const current = window.location.pathname;
+  if (current.match(target)) {
+    return true;
+  } else {
+    return false;
+  }
+}

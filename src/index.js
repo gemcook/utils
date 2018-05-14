@@ -1,2 +1,7 @@
-/* @flow strict-local */
-export {default as shapeQueryParameter} from './shapeQueryParameter';
+/* @flow */
+export {getUrlParameter, matchCurrentPath} from './url';
+export {
+  getCurrentDatetime,
+  getCurrentTimestamp,
+  compareTimestamp,
+} from './date';

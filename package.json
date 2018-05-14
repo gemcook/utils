@@ -50,6 +50,7 @@
     "prepublishOnly": "make prepublish"
   },
   "dependencies": {
-    "js-base64": "^2.4.3"
+    "js-base64": "^2.4.3",
+    "moment": "^2.22.1"
   }
 }
