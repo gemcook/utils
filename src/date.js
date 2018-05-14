@@ -20,7 +20,7 @@ export function getDatetime(
 ) {
   let datetime;
   if (second) {
-    datetime = moment.unix(timestamp).format(format);
+    datetime = moment(timestamp * 1000).format(format);
   } else {
     datetime = moment(timestamp).format(format);
   }
