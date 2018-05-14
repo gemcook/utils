@@ -13,6 +13,14 @@ export function getCurrentTimestamp() {
   return now;
 }
 
+export function getDatetime(
+  timestamp: number,
+  format?: string = 'YYYY-MM-DD HH:mm:ss',
+) {
+  const datetime = moment(timestamp).format(format);
+  return datetime;
+}
+
 export function compareTimestamp(targetDate: string) {
   const now = moment().format('x');
   const target = moment(targetDate).format('x');
