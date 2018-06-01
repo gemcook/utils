@@ -1,6 +1,6 @@
 {
   "name": "@gemcook/utils",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "repository": "https://github.com/gemcook/utils.git",
