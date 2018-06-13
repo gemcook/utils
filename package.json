@@ -1,6 +1,6 @@
 {
   "name": "@gemcook/utils",
-  "version": "1.5.7",
+  "version": "1.6.0",
   "main": "lib/umd/index.umd.js",
   "repository": "https://github.com/gemcook/utils.git",
   "author": "shsssskn <shsssskn@gmail.com>",
