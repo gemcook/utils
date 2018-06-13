@@ -1,21 +1,19 @@
 clean:
 	rm -rf ./lib/
 
-build-es:
+build-umd:
 	NODE_PATH=$(shell which node) \
 	NODE_ENV=production \
 	BABEL_ENV=production \
-	yarn run build:es
+	yarn run build:umd
 
 prepublish:
 	$(MAKE) clean
 
-	$(MAKE) build-es
+	$(MAKE) build-umd
 
-	cp ./flow-typed/index.js.flow ./lib/index.js.flow
-
-build:
-	yarn run build-storybook
+	yarn build:flow-gen
+	# cp ./flow-typed/index.js.flow ./lib/index.js.flow
 
 publish:
 	yarn publish --access public
