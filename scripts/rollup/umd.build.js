@@ -50,7 +50,7 @@ async function build() {
 
     bundle.write({
       format: 'umd',
-      file: resolvePath('lib/umd/index.umd.js'),
+      file: resolvePath('lib/index.js'),
       name: '@gemcook/utils',
     });
   } catch (error) {

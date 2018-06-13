@@ -1,7 +1,7 @@
 {
   "name": "@gemcook/utils",
   "version": "1.6.1",
-  "main": "lib/umd/index.umd.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/gemcook/utils.git",
   "author": "shsssskn <shsssskn@gmail.com>",
   "license": "MIT",
