@@ -1,6 +1,10 @@
 /* @flow */
-import * as moment from 'moment';
+import * as _moment from 'moment';
 import 'moment/locale/ja';
+
+// https://github.com/jvandemo/generator-angular2-library/issues/221
+const moment = _moment;
+
 moment.locale('ja');
 
 export function getCurrentDatetime(format?: string = 'YYYY-MM-DD HH:mm:ss') {

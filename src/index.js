@@ -16,3 +16,7 @@ export {
 } from './date';
 
 export {getBrand} from './image';
+
+export function happy() {
+  console.log('HAPPY!!');
+}

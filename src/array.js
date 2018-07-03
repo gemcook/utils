@@ -1,5 +1,5 @@
 /* @flow */
-export const getDetailById = (id: any, data: Array<any>) => {
+export const getDetailById = (id: any, data: Array<*>) => {
   const shapeId = Number(id);
   const results = data.filter(detail => {
     return shapeId === detail.id;
@@ -7,7 +7,7 @@ export const getDetailById = (id: any, data: Array<any>) => {
   return results[0];
 };
 
-export const checkKeyInArray = (key: any, array: Array) => {
+export const checkKeyInArray = (key: any, array: Array<*>) => {
   let result;
 
   for (let i = 0; i < array.length; i++) {
@@ -22,7 +22,7 @@ export const checkKeyInArray = (key: any, array: Array) => {
 };
 
 // OIA = Object in Array
-export const checkKeyInOIA = (key: string, array: Array) => {
+export const checkKeyInOIA = (key: string, array: Array<*>) => {
   let result;
 
   for (let i = 0; i < array.length; i++) {
@@ -36,7 +36,7 @@ export const checkKeyInOIA = (key: string, array: Array) => {
   return result;
 };
 
-export const checkValueInOIA = (key: string, value: any, array: Array) => {
+export const checkValueInOIA = (key: string, value: any, array: Array<*>) => {
   let result;
 
   for (let i = 0; i < array.length; i++) {
