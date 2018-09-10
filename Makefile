@@ -12,7 +12,7 @@ prepublish:
 
 	$(MAKE) build-umd
 
-	yarn build:flow-gen
+	# yarn build:flow-gen
 	# cp ./flow-typed/index.js.flow ./lib/index.js.flow
 
 publish:
