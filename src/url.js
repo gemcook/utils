@@ -1,5 +1,5 @@
 /* @flow */
-export function getUrlParameter() {
+export function getUrlParameter(): Object {
   const url = window.location.search;
   let result = {};
   let max = 0;
@@ -16,9 +16,10 @@ export function getUrlParameter() {
   return result;
 }
 
-export function matchCurrentPath(path: string) {
+export function matchCurrentPath(path: string): boolean {
   const target = new RegExp(path);
   const current = window.location.pathname;
+
   if (current.match(target)) {
     return true;
   } else {

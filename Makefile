@@ -12,8 +12,8 @@ prepublish:
 
 	$(MAKE) build-umd
 
-	yarn build:flow-gen
-	# cp ./flow-typed/index.js.flow ./lib/index.js.flow
+	# yarn build:flow-gen
+	cp ./flow-typed/index.js.flow ./lib/index.js.flow
 
 publish:
 	yarn publish --access public

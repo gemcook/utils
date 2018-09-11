@@ -7,16 +7,12 @@
 [lints]
 
 [options]
-module.file_ext=.js
-module.file_ext=.mjs
-module.file_ext=.jsx
-module.file_ext=.json
 esproposal.class_instance_fields=enable
 esproposal.class_static_fields=enable
+esproposal.decorators=ignore
 esproposal.export_star_as=enable
 esproposal.optional_chaining=enable
+esproposal.nullish_coalescing=enable
 
 [strict]
 
-[version]
-0.74.0
