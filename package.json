@@ -35,6 +35,8 @@
   },
   "dependencies": {
     "js-base64": "^2.4.9",
-    "moment": "^2.22.2"
+    "moment": "^2.22.2",
+    "ramda-adjunct": "^2.10.0",
+    "ramda-extension": "^0.5.1"
   }
 }

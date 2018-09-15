@@ -4222,6 +4222,16 @@ quick-lru@^1.0.0:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-1.1.0.tgz#4360b17c61136ad38078397ff11416e186dcfbb8"
   integrity sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=
 
+ramda-adjunct@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/ramda-adjunct/-/ramda-adjunct-2.10.0.tgz#94fbb3377a6ef01e6be869a0c2c236ba66393708"
+  integrity sha512-OQVjMUPnm6LJhAlKuWMVT7VoaN3MsCvIkUOIsg7WH9I2hL8e8G3S/voBoJEYqK5KZXbcASn8vg2sLMejwo3q5A==
+
+ramda-extension@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/ramda-extension/-/ramda-extension-0.5.1.tgz#94e3ebef9201c662ac17bab9077bc13389ff9886"
+  integrity sha512-kbk273R3dwIi3yGNU726DrvnOj7ez0nix+/yg5oNTXmU2BmZahqCb120IjJvk7fBceqX3kknNdvLM+LZTHFoBA==
+
 read-cmd-shim@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/read-cmd-shim/-/read-cmd-shim-1.0.1.tgz#2d5d157786a37c055d22077c32c53f8329e91c7b"
