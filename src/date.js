@@ -40,3 +40,23 @@ export function compareTimestamp(targetDate: string) {
     return true;
   }
 }
+
+type AtTime = {
+  year: string,
+  month: string,
+  date: string,
+};
+
+export function convertTime({year, month, date}: AtTime, format: string) {
+  const months = Number(month) - 1;
+  const atTime = moment({
+    years: year,
+    months:
+      months.toString().length === 1
+        ? '0' + months.toString()
+        : months.toString(),
+    date: date.length === 1 ? '0' + date : date,
+  });
+
+  return atTime.format(format);
+}

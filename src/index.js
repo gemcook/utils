@@ -13,6 +13,7 @@ export {
   getCurrentTimestamp,
   getDatetime,
   compareTimestamp,
+  convertTime,
 } from './date';
 
 export {getBrand} from './image';
