@@ -17,3 +17,5 @@ export {
 } from './date';
 
 export {getBrand} from './image';
+
+export {default as checkStatus} from './http/checkStatus';
