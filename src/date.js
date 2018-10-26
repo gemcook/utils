@@ -48,7 +48,7 @@ type AtTime = {
 };
 
 export function convertTime({year, month, date}: AtTime, format: string) {
-  const months = Number(month) - 1;
+  const months = Number(month);
   const atTime = moment({
     years: year,
     months:
