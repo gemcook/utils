@@ -1,8 +1,10 @@
 /* @flow */
-export const getDetailById = (id: any, data: Array<*>) => {
+export const getDetailById = (id: any, data: Array<*>, idFormat?: string) => {
+  const token = idFormat || id;
+
   const shapeId = Number(id);
   const results = data.filter(detail => {
-    return shapeId === detail.id;
+    return shapeId === detail[token];
   });
   return results[0];
 };
