@@ -13,5 +13,11 @@ export default function parseYear(
   };
 
   const shapeDate = parse(dateString, formatString, new Date());
-  return format(shapeDate, formatToken, LocaleOption);
+  const result = format(shapeDate, formatToken, LocaleOption);
+
+  if (result === 'Invalid Date') {
+    return null;
+  } else {
+    return result;
+  }
 }

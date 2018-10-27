@@ -5,6 +5,6 @@ export default function checkDate(dateString: string) {
   if (isValid(dateString)) {
     return dateString;
   } else {
-    return '';
+    throw new Error(`${dateString} is "Invalid Date".`);
   }
 }
