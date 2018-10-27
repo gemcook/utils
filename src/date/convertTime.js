@@ -1,6 +1,7 @@
 /* @flow */
 import format from 'date-fns/format';
 import ja from 'date-fns/locale/ja';
+import parse from 'date-fns/parse';
 import * as R from 'ramda';
 
 type AtTime = {
@@ -18,7 +19,7 @@ export default function convertTime(
       date => R.type(date) === 'Object',
       ({year, month, date}) => new Date(year, month, date),
     ],
-    [date => R.type(date) === 'String', date => new Date(date)],
+    [date => R.type(date) === 'String', date => new Date(parse(date))],
     [
       R.T,
       date => {
