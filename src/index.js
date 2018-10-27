@@ -8,13 +8,7 @@ export {
   checkValueInOIA,
 } from './array';
 
-export {
-  getCurrentDatetime,
-  getCurrentTimestamp,
-  getDatetime,
-  compareTimestamp,
-  convertTime,
-} from './date';
+export * from './date';
 
 export {getBrand} from './image';
 
