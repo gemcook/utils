@@ -1,5 +1,6 @@
 // @flow
 
+declare export function checkDate(dateString: string): string | string;
 declare export function checkKeyInArray(key: any, array: Array<any>): void;
 declare export function checkKeyInOIA(key: string, array: Array<any>): void;
 declare export function checkStatus(response: any): any;

@@ -1,4 +1,5 @@
 /* @flow */
+export {default as checkDate} from './checkDate';
 export {default as compareTimestamp} from './compareTimestamp';
 export {default as convertTime} from './convertTime';
 export {default as getCurrentDatetime} from './getCurrentDatetime';
