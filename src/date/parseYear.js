@@ -6,7 +6,7 @@ import parse from 'date-fns/parse';
 export default function parseYear(
   dateString: string,
   formatString: string,
-  formatToken?: string = 'YYYY',
+  formatToken?: string = 'yyyy',
 ) {
   const LocaleOption = {
     locale: ja,
