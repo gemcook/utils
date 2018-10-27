@@ -22,7 +22,13 @@ export default function convertTime(
   const shallowValidDate = R.cond([
     [
       date => R.type(date) === 'Object',
-      ({year, month, date}) => new Date(year, month, date),
+      ({year, month, date}) => {
+        return new Date(
+          parseInt(year, 10),
+          parseInt(month, 10) - 1,
+          parseInt(date, 10),
+        );
+      },
     ],
     [
       date => R.type(date) === 'String',
