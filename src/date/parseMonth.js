@@ -12,6 +12,6 @@ export default function parseMonth(
     locale: ja,
   };
 
-  const shapeDate = parse(dateString, formatString, new Date(), LocaleOption);
+  const shapeDate = parse(dateString, formatString, new Date());
   return format(shapeDate, formatToken, LocaleOption);
 }

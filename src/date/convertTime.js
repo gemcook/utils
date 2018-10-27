@@ -26,9 +26,9 @@ export default function convertTime(
     ],
     [
       date => R.type(date) === 'String',
-      date => {
+      (date, formatString) => {
         if (formatString) {
-          return parse(date, formatString, new Date(), LocaleOption);
+          return parse(date, formatString, new Date());
         } else {
           console.error(`date string parse need "formatString".`);
           return new Date();
@@ -42,7 +42,7 @@ export default function convertTime(
         return new Date();
       },
     ],
-  ])(date);
+  ])(date, formatString);
 
   return format(shallowValidDate, formatToken, LocaleOption);
 }
