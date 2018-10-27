@@ -1,15 +1,17 @@
 /* @flow */
-import format from 'date-fns/format';
-import ja from 'date-fns/locale/ja';
+import {format} from 'date-fns';
+import {ja} from 'date-fns/locale';
 import parse from 'date-fns/parse';
 
 export default function parseYear(
-  token?: string,
+  dateString: string,
+  formatString: string,
   formatToken?: string = 'YYYY',
 ) {
-  if (token) {
-    return format(new Date(parse(token)), formatToken, {locale: ja});
-  } else {
-    return format(new Date(), formatToken, {locale: ja});
-  }
+  const LocaleOption = {
+    locale: ja,
+  };
+
+  const shapeDate = parse(dateString, formatString, new Date(), LocaleOption);
+  return format(shapeDate, formatToken, LocaleOption);
 }

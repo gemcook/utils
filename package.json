@@ -39,7 +39,7 @@
     "prepublishOnly": "make prepublish"
   },
   "dependencies": {
-    "date-fns": "^1.29.0",
+    "date-fns": "^2.0.0-alpha.24",
     "js-base64": "^2.4.9",
     "moment": "^2.22.2",
     "ramda": "^0.25.0"
