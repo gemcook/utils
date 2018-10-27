@@ -4,3 +4,6 @@ export {default as convertTime} from './convertTime';
 export {default as getCurrentDatetime} from './getCurrentDatetime';
 export {default as getCurrentTimestamp} from './getCurrentTimestamp';
 export {default as getDatetime} from './getDatetime';
+export {default as getDay} from './getDay';
+export {default as getMonth} from './getMonth';
+export {default as getYear} from './getYear';
