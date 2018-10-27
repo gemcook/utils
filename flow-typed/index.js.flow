@@ -10,9 +10,9 @@ declare export function getBrand(brandName: string): void | string | string | st
 declare export function getCurrentDatetime(formatToken?: string): string;
 declare export function getCurrentTimestamp(): string;
 declare export function getDatetime(timestamp: number, second?: boolean, format?: string): any | any;
-declare export function getDay(token?: string, formatToken?: string): string | string;
 declare export function getDetailById(id: any, data: Array<any>, idFormat?: string): any;
-declare export function getMonth(token?: string, formatToken?: string): string | string;
 declare export function getUrlParameter(): Object;
-declare export function getYear(token?: string, formatToken?: string): string | string;
 declare export function matchCurrentPath(path: string): boolean;
+declare export function parseDay(token?: string, formatToken?: string): string | string;
+declare export function parseMonth(token?: string, formatToken?: string): string | string;
+declare export function parseYear(token?: string, formatToken?: string): string | string;

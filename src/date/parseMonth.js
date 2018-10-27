@@ -2,7 +2,10 @@
 import format from 'date-fns/format';
 import ja from 'date-fns/locale/ja';
 
-export default function getYear(token?: string, formatToken?: string = 'YYYY') {
+export default function parseMonth(
+  token?: string,
+  formatToken?: string = 'MM',
+) {
   if (token) {
     return format(new Date(token), formatToken, {locale: ja});
   } else {

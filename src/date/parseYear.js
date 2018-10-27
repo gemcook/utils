@@ -2,7 +2,10 @@
 import format from 'date-fns/format';
 import ja from 'date-fns/locale/ja';
 
-export default function getDay(token?: string, formatToken?: string = 'D') {
+export default function parseYear(
+  token?: string,
+  formatToken?: string = 'YYYY',
+) {
   if (token) {
     return format(new Date(token), formatToken, {locale: ja});
   } else {
