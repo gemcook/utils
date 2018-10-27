@@ -5,7 +5,7 @@ declare export function checkKeyInOIA(key: string, array: Array<any>): void;
 declare export function checkStatus(response: any): any;
 declare export function checkValueInOIA(key: string, value: any, array: Array<any>): void;
 declare export function compareTimestamp(targetDate: string): boolean | boolean;
-declare export function convertTime(date: {date: string, month: string, year: string} | string, formatToken: string): string;
+declare export function convertTime(date: {date: string, month: string, year: string} | string, formatToken: string, formatString?: string): string;
 declare export function getBrand(brandName: string): void | string | string | string | string | string | string | string | string;
 declare export function getCurrentDatetime(formatToken?: string): string;
 declare export function getCurrentTimestamp(): string;
@@ -13,6 +13,6 @@ declare export function getDatetime(timestamp: number, second?: boolean, format?
 declare export function getDetailById(id: any, data: Array<any>, idFormat?: string): any;
 declare export function getUrlParameter(): Object;
 declare export function matchCurrentPath(path: string): boolean;
-declare export function parseDay(token?: string, formatToken?: string): string | string;
-declare export function parseMonth(token?: string, formatToken?: string): string | string;
-declare export function parseYear(token?: string, formatToken?: string): string | string;
+declare export function parseDay(dateString: string, formatString: string, formatToken?: string): string;
+declare export function parseMonth(dateString: string, formatString: string, formatToken?: string): string;
+declare export function parseYear(dateString: string, formatString: string, formatToken?: string): string;

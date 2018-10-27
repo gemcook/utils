@@ -30,6 +30,7 @@ export default function convertTime(
         if (formatString) {
           return parse(date, formatString, new Date(), LocaleOption);
         } else {
+          console.error(`date string parse need "formatString".`);
           return new Date();
         }
       },
