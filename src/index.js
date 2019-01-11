@@ -1,15 +1,11 @@
-/* @flow */
-export {getUrlParameter, matchCurrentPath} from './url';
+import * as array from './array';
+export {array};
 
-export {
-  getDetailById,
-  checkKeyInArray,
-  checkKeyInOIA,
-  checkValueInOIA,
-} from './array';
+import * as date from './date';
+export {date};
 
-export * from './date';
+import * as image from './image';
+export {image};
 
-export {getBrand} from './image';
-
-export {default as checkStatus} from './http/checkStatus';
+import * as url from './url';
+export {url};

@@ -1,5 +1,4 @@
-/* @flow */
-export function getBrand(brandName: string) {
+export function getBrand(brandName) {
   let result;
   switch (brandName) {
     case 'Visa': {

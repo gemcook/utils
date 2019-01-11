@@ -1,5 +1,5 @@
-/* @flow */
-export function getUrlParameter(): Object {
+
+export function getUrlParameter() {
   const url = window.location.search;
   let result = {};
   let max = 0;

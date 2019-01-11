@@ -1,15 +1,17 @@
-/* @flow */
-export const getDetailById = (id: any, data: Array<*>, idFormat?: string) => {
-  const token = idFormat || id;
+import _ from 'lodash';
 
-  const shapeId = Number(id);
-  const results = data.filter(detail => {
-    return shapeId === detail[token];
+export const getDetailById = (id, data, idFormat?) => {
+  const key = idFormat ? idFormat : 'id';
+  const targetId = Number(id);
+
+  const result = _.find(data, d => {
+    return targetId === d[key];
   });
-  return results[0];
+
+  return result;
 };
 
-export const checkKeyInArray = (key: any, array: Array<*>) => {
+export const checkKeyInArray = (key, array) => {
   let result;
 
   for (let i = 0; i < array.length; i++) {
@@ -24,7 +26,7 @@ export const checkKeyInArray = (key: any, array: Array<*>) => {
 };
 
 // OIA = Object in Array
-export const checkKeyInOIA = (key: string, array: Array<*>) => {
+export const checkKeyInOIA = (key, array) => {
   let result;
 
   for (let i = 0; i < array.length; i++) {
@@ -38,7 +40,7 @@ export const checkKeyInOIA = (key: string, array: Array<*>) => {
   return result;
 };
 
-export const checkValueInOIA = (key: string, value: any, array: Array<*>) => {
+export const checkValueInOIA = (key, value, array) => {
   let result;
 
   for (let i = 0; i < array.length; i++) {
