@@ -1,6 +1,6 @@
 {
   "name": "@gemcook/utils",
-  "version": "3.5.2",
+  "version": "3.6.0",
   "main": "lib/index.js",
   "repository": "https://github.com/gemcook/utils.git",
   "author": "shsssskn <shsssskn@gmail.com>",
@@ -39,15 +39,10 @@
     "prepublishOnly": "make prepublish"
   },
   "dependencies": {
-<<<<<<< Updated upstream
     "date-fns": "^2.0.0-alpha.24",
-    "js-base64": "^2.4.9",
-    "moment": "^2.22.2",
-    "ramda": "^0.25.0"
-=======
     "js-base64": "^2.4.3",
     "lodash": "^4.17.11",
-    "moment": "^2.22.1"
->>>>>>> Stashed changes
+    "moment": "^2.22.1",
+    "ramda": "^0.26.1"
   }
 }
