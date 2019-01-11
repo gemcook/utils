@@ -1,4 +1,3 @@
-
 export function getUrlParameter() {
   const url = window.location.search;
   let result = {};

@@ -3,7 +3,7 @@
   "version": "3.6.0",
   "main": "lib/index.js",
   "repository": "https://github.com/gemcook/utils.git",
-  "author": "shsssskn <shsssskn@gmail.com>",
+  "author": "Gemcook, Inc. <tech@gemcook.com>",
   "license": "MIT",
   "files": [
     "lib",
@@ -42,7 +42,7 @@
     "date-fns": "^2.0.0-alpha.24",
     "js-base64": "^2.4.3",
     "lodash": "^4.17.11",
-    "moment": "^2.22.1",
+    "moment": "^2.23.0",
     "ramda": "^0.26.1"
   }
 }

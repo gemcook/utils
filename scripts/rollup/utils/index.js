@@ -1,4 +1,3 @@
-/* @flow */
 const getBabelOptions = require('./getBabelOptions');
 const resolvePath = require('./resolvePath');
 const getClosureOptions = require('./getClosureOptions');
