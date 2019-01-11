@@ -17,6 +17,3 @@ build:
 
 publish:
 	yarn publish --access public
-
-gen-flow:
-	flow gen-flow-files ./src/index.js --out-dir ./flow-typed
