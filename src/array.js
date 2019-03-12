@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import Case from 'case';
 
 export const getDetailById = (id, data, idFormat?) => {
   const key = idFormat ? idFormat : 'id';
@@ -52,4 +53,38 @@ export const checkValueInOIA = (key, value, array) => {
   }
 
   return result;
+};
+
+export const toCamel = collection => {
+  if (_.isArray(collection)) {
+    const results = collection.map(value => {
+      const shaped = _.mapKeys(value, (v, k) => Case.camel(k));
+      return shaped;
+    });
+    return results;
+  } else if (_.isPlainObject(collection)) {
+    return _.mapKeys(collection, (v, k) => Case.camel(k));
+  } else if (_.isString(collection)) {
+    return Case.camel(collection);
+  }
+
+  // ArrayまたはObject、Stringで無ければそのまま
+  return collection;
+};
+
+export const toSnake = collection => {
+  if (_.isArray(collection)) {
+    const results = collection.map(value => {
+      const shaped = _.mapKeys(value, (v, k) => Case.snake(k));
+      return shaped;
+    });
+    return results;
+  } else if (_.isPlainObject(collection)) {
+    return _.mapKeys(collection, (v, k) => Case.snake(k));
+  } else if (_.isString(collection)) {
+    return Case.snake(collection);
+  }
+
+  // ArrayまたはObject、Stringで無ければそのまま
+  return collection;
 };
