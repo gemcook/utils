@@ -1,4 +1,4 @@
-export function getBrand(brandName) {
+export function getCreditBrand(brandName) {
   let result;
   switch (brandName) {
     case 'Visa': {

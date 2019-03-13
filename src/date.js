@@ -1,3 +1,4 @@
+// FIXME momentに変更する
 import moment from 'moment';
 import {isValid, format} from 'date-fns';
 import {ja} from 'date-fns/locale';
