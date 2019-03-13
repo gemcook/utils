@@ -1,6 +1,6 @@
 import jwtDecode from 'jwt-decode';
 
-const parse = jwt => {
+export const parse = jwt => {
   if (jwt) {
     const parseToken = jwtDecode(jwt);
     return parseToken;
@@ -8,5 +8,3 @@ const parse = jwt => {
 
   return null;
 };
-
-export const jwt = {parse};
