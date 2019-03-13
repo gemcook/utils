@@ -15,5 +15,9 @@ prepublish:
 build:
 	yarn run build-storybook
 
-publish:
+test:
+	yarn test
+
+publish: test
 	yarn publish --access public
+
