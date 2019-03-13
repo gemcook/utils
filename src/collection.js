@@ -1,10 +1,14 @@
 import _ from 'lodash';
 import Case from 'case';
+import {camelizeKeys} from 'ramda-extension';
 
 export const toCamelKeys = collection => {
-  return __changeCases(collection, 'camel');
+  if (_.isString(collection)) {
+    return __changeCases(collection, 'camel');
+  } else {
+    return camelizeKeys(collection);
+  }
 };
-
 export const toSnakeKeys = collection => {
   return __changeCases(collection, 'snake');
 };
