@@ -1,8 +1,8 @@
-import qs from 'qs';
+import lQs from 'qs';
 
-export default {
+export const qs = {
   parse(str: string) {
     const qsStr = str.slice(1);
-    return qs.parse(qsStr);
+    return lQs.parse(qsStr);
   },
 };
