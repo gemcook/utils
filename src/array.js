@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-export const getDetailById = (id, data, idFormat) => {
+export const getDetailById = (id, data, idFormat?) => {
   const key = idFormat ? idFormat : 'id';
   const targetId = Number(id);
 
