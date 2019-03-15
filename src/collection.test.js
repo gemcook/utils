@@ -1,35 +1,8 @@
 import * as collection from './collection';
 
-// 配列内のオブジェクトのキーのスネークをキャメルに変換する
-test('toCamelKeys (case Array)', () => {
-  const snakeCase = [
-    {
-      gem_id: 1,
-      gem_name: 'ダイヤモンド',
-      gem_price: 100,
-    },
-    {
-      gem_id: 2,
-      gem_name: 'ターコイズ',
-      gem_price: 200,
-    },
-  ];
-
-  const expectedData = [
-    {
-      gemId: 1,
-      gemName: 'ダイヤモンド',
-      gemPrice: 100,
-    },
-    {
-      gemId: 2,
-      gemName: 'ターコイズ',
-      gemPrice: 200,
-    },
-  ];
-
-  expect(expectedData).toEqual(collection.toCamelKeys(snakeCase));
-});
+// -----------------------------------------------------------------------------
+// toCamelKeys
+// -----------------------------------------------------------------------------
 
 // オブジェクト内のキーのスネークをキャメルに変換する
 test('toCamelKeys (case Object)', () => {
@@ -48,8 +21,42 @@ test('toCamelKeys (case Object)', () => {
   expect(expectedData).toEqual(collection.toCamelKeys(snakeCase));
 });
 
+// オブジェクト内のオブジェクトのキーのスネークをキャメルに変換する
+test('toCamelKeys (case Object in Object)', () => {
+  const snakeCase = {
+    gem_data: {
+      gem_id: 1,
+      gem_name: 'ダイヤモンド',
+      gem_price: 100,
+    },
+  };
+
+  const expectedData = {
+    gemData: {
+      gemId: 1,
+      gemName: 'ダイヤモンド',
+      gemPrice: 100,
+    },
+  };
+
+  expect(expectedData).toEqual(collection.toCamelKeys(snakeCase));
+});
+
+// オブジェクト内のキーのみをキャメルに変換する
+test('toCamelKeys (case Object in Array)', () => {
+  const snakeCase = {
+    gem_data: ['gem_id', 1, 'gem_name', 'ダイヤモンド', 'gem_price', 100],
+  };
+
+  const expectedData = {
+    gemData: ['gem_id', 1, 'gem_name', 'ダイヤモンド', 'gem_price', 100],
+  };
+
+  expect(expectedData).toEqual(collection.toCamelKeys(snakeCase));
+});
+
 // オブジェクト内のキーのスネークをキャメルに変換する
-test('toCamelKeys (case Array in Object in Object)', () => {
+test('toCamelKeys (case Object in Array in Object)', () => {
   const snakeCase = {
     gem_one: [
       {
@@ -103,6 +110,37 @@ test('toCamelKeys (case Array in Object in Object)', () => {
       },
     ],
   };
+
+  expect(expectedData).toEqual(collection.toCamelKeys(snakeCase));
+});
+
+// 配列内のオブジェクトのキーのスネークをキャメルに変換する
+test('toCamelKeys (case Array in Object)', () => {
+  const snakeCase = [
+    {
+      gem_id: 1,
+      gem_name: 'ダイヤモンド',
+      gem_price: 100,
+    },
+    {
+      gem_id: 2,
+      gem_name: 'ターコイズ',
+      gem_price: 200,
+    },
+  ];
+
+  const expectedData = [
+    {
+      gemId: 1,
+      gemName: 'ダイヤモンド',
+      gemPrice: 100,
+    },
+    {
+      gemId: 2,
+      gemName: 'ターコイズ',
+      gemPrice: 200,
+    },
+  ];
 
   expect(expectedData).toEqual(collection.toCamelKeys(snakeCase));
 });
