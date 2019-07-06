@@ -4,7 +4,7 @@ const babel = require('rollup-plugin-babel');
 
 export default [
   {
-    input: 'src/index.ts',
+    input: 'src/index.js',
     plugins: [
       resolve({
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
