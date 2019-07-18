@@ -43,9 +43,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "base-64": "^0.1.0",
     "case": "^1.6.1",
     "date-fns": "^2.0.0-alpha.24",
-    "js-base64": "^2.4.3",
     "jwt-decode": "^2.2.0",
     "lodash": "^4.17.11",
     "moment": "^2.23.0",
